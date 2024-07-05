@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paschal Brews - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom styles -->
+    <style>
+      body {
+        background-color: #f7f0e3;
+      }
+
+      .hero-section {
+        background-image: url("./img/cafecoffee.jpg");
+        background-size: cover;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-custom {
+        background-color: #3e2723;
+      }
+
+      .navbar-custom .navbar-brand,
+      .navbar-custom .navbar-nav .nav-link {
+        color: #fbc02d;
+      }
+
+      .navbar-custom .navbar-toggler-icon {
+        background-color: #fbc02d;
+      }
+
+      .discover-btn {
+        background-color: #fbc02d;
+        color: #3e2723;
+        font-weight: bold;
+        border: none;
+      }
+
+      .discover-btn:hover {
+        background-color: #f9a825;
+        color: #3e2723;
+      }
+
+      .card {
+        background-color: #fafafa;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .card-title {
+        color: #3e2723;
+      }
+
+      .card-text {
+        color: #5d4037;
+      }
+
+      .testimonial-card {
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      .testimonial-card p {
+        color: #5d4037;
+      }
+
+      .testimonial-card strong {
+        color: #3e2723;
+      }
+
+      .contact-section {
+        background-color: #3e2723;
+        color: #fff;
+      }
+
+      .contact-section a {
+        background-color: #fbc02d;
+        color: #3e2723;
+        font-weight: 700;
+        border: none;
+      }
+
+      .testimonial-card {
+        background-color: #fbc02d;
+        color: white;
+      }
+
+      .contact-section a:hover {
+        color: #5d4037;
+        background-color: #f7f0e3;
+        border: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <a class="navbar-brand" href="#">Paschal Brews</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/menu.html">Menu</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1>Welcome To Paschal Brews</h1>
+        <p class="lead">Enjoy the finest coffee in town.</p>
+        <a href="#features" class="btn discover-btn btn-lg">Discover More</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Freshly Brewed</h3>
+                <p class="card-text">
+                  Experience the rich taste of our freshly brewed coffees.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Variety of Flavors</h3>
+                <p class="card-text">
+                  Choose from a wide variety of coffee flavors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Relaxing Atmosphere</h3>
+                <p class="card-text">
+                  Enjoy our cozy and relaxing coffee shop environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Customer Testimonials</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="card-body">
+                <p class="card-text">"Great coffee and excellent service!"</p>
+                <p class="card-text"><strong>- John Doe</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="card-body">
+                <p class="card-text">"My favorite spot for morning coffee."</p>
+                <p class="card-text"><strong>- Jane Smith</strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="card-body">
+                <p class="card-text">"Highly recommend their espresso!"</p>
+                <p class="card-text"><strong>- Michael Johnson</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+      <div class="container text-center">
+        <h2>Contact Us</h2>
+        <p class="lead">Have a question or feedback? Reach out to us!</p>
+        <a href="./pages/contact.html" class="btn btn-primary btn-lg"
+          >Contact Us</a
+        >
+      </div>
+    </section>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
